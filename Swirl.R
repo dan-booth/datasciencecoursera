@@ -19,3 +19,12 @@ swirl()
 
 # Start with the R Programming course
 install_from_swirl("R Programming")
+
+# Data Analysis course
+install_from_swirl("Data Analysis")
+
+# Regression Models course
+install_from_swirl("Regression Models")
+
+# Getting and cleaning data course
+install_from_swirl("Getting and Cleaning Data")
