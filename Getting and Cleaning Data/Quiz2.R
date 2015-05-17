@@ -29,6 +29,20 @@ for (i in 1:30) {
 repos[[5]]$created_at
 
 # = Q2 = #
+# Download the file
+fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+setwd("~/GitHub/datasciencecoursera/Getting and Cleaning Data")
+download.file(fileURL, destfile = "data/q2.csv")
+# Read in data
+acs <- read.table("data/q2.csv", header = TRUE, sep = ",")
+head(acs)
+# Test the correct response
+library(sqldf)
+sqldf("select pwgtp1 from acs where AGEP < 50")
+
+# = Q3 = #
+unique(acs$AGEP)
+sqldf("select distinct AGEP from acs")
 
 # = Q4 = #
 
