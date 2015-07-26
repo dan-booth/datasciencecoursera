@@ -11,7 +11,7 @@ oauth_endpoints("github")
 myapp <- oauth_app("github", "enter_client_id_here", "enter_secret_key_here")
 
 # Get OAuth credentials
-github_token  <- oauth2.0_token(oauth_endpoints("github"), myapp)
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
 
 # Now use the GitHub API
 gtoken <- config(token = github_token)
@@ -25,13 +25,16 @@ for (i in 1:30) {
     print(sprintf("List ID: %i Repo Name: %s",i, repos[[i]]$name))
 }
 
-# Data sharing is repo 5, so get the created date
-repos[[5]]$created_at
+# Data sharing is repo 6, so get the created date
+repos[[6]]$created_at
 
 # = Q2 = #
 # Download the file
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+# Windows
 setwd("~/GitHub/datasciencecoursera/Getting and Cleaning Data")
+# Mac
+setwd("/Users/Daniel/RStudio/datasciencecoursera/Getting and Cleaning Data/")
 download.file(fileURL, destfile = "data/q2.csv")
 # Read in data
 acs <- read.table("data/q2.csv", header = TRUE, sep = ",")
