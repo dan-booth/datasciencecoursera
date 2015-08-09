@@ -12,6 +12,9 @@ q1 <- read.csv("microdata.csv", header = TRUE)
 # for $1,000,000+ is 24
 length(which(q1$VAL == 24))
 
+# Q2
+# It violates the 'Tidy data has one variable per column' principle
+
 # Q3
 # Download file -- Note this downloaded a corrupt file so had to manually download
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FDATA.gov_NGAP.xlsx", "getdata-data-DATA.gov_NGAP.xlsx")

@@ -25,8 +25,8 @@ for (i in 1:30) {
     print(sprintf("List ID: %i Repo Name: %s",i, repos[[i]]$name))
 }
 
-# Data sharing is repo 5, so get the created date
-repos[[5]]$created_at
+# Data sharing is repo 6, so get the created date
+repos[[6]]$created_at
 
 # = Q2 = #
 # Download the file
