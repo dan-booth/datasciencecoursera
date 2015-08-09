@@ -3,7 +3,10 @@
 # = Q1 = #
 # Download the file
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
+# Windows
 setwd("~/GitHub/datasciencecoursera/Getting and Cleaning Data")
+# Mac
+setwd("/Users/Daniel/RStudio/datasciencecoursera/Getting and Cleaning Data/")
 download.file(fileURL, destfile = "data/quiz3_Idaho.csv")
 # Read in the data
 acs <- read.table("data/quiz3_Idaho.csv", header = TRUE, sep = ",")

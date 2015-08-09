@@ -2,7 +2,10 @@
 
 # Q1
 # Download file
+# Windows
 setwd("C:/Users/daniel/Documents/GitHub/datasciencecoursera/Getting and Cleaning Data/data/")
+# Mac
+setwd("/Users/Daniel/RStudio/datasciencecoursera/Getting and Cleaning Data/data/")
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv", "microdata.csv")
 
 #read.data
