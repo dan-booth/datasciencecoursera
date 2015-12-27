@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Text string case converter</title>
+  <meta name="description" content="">
+  <meta name="author" content="Daniel Booth">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>Text string case converter</h2>
+  <h4>Convert text with ease</h4>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h3>Everyone has had this problem...</h3>
+  <ul>
+<li>You&#39;ve got a chunk of text that needs case converting</li>
+<li>Your options:
+
+<ol>
+<li>Manually type out everything again in your desired case</li>
+<li>Use the <strong>Text string case converter</strong></li>
+</ol></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h3>It&#39;s easy...</h3>
+  <ul>
+<li>Enter the text you would like to convert into a text box.</li>
+</ul>
+
+<p><img src="img/step1.png" alt="Step 1"></p>
+
+<ul>
+<li>Choose the type of conversion you would like from a dropdown list.</li>
+</ul>
+
+<p><img src="img/step2.png" alt="Step 2"></p>
+
+<ul>
+<li>Your converted text will then appear under the <em>Converted text</em> heading.</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h3>Upper case conversion</h3>
+  <ul>
+<li><strong>Convert this</strong>:
+<code>
+&quot;I really wish I could make this text all UPPER case.&quot;
+</code></li>
+<li><strong>to this</strong>:</li>
+</ul>
+
+<pre><code>## [1] &quot;I REALLY WISH I COULD MAKE THIS TEXT ALL UPPER CASE.&quot;
+</code></pre>
+
+<h3>Lower case conversion</h3>
+
+<ul>
+<li><strong>Convert this</strong>:
+<code>
+&quot;MAKE ME lower CASE please.&quot;
+</code></li>
+<li><strong>to this</strong>:</li>
+</ul>
+
+<pre><code>## [1] &quot;make me lower case please.&quot;
+</code></pre>
+
+<h3>Title case conversion</h3>
+
+<ul>
+<li><strong>Convert this</strong>:
+<code>
+&quot;THERE ARE TOO MANY CAPS IN THIS.&quot;
+</code></li>
+<li><strong>to this</strong>:</li>
+</ul>
+
+<pre><code>## [1] &quot;There Are Too Many Caps In This.&quot;
+</code></pre>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h2>Get started now!</h2>
+  <p><a href="https://nevermiss.shinyapps.io/course_project">Click here to view the app</a></p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
